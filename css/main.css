@@ -1,0 +1,280 @@
+/* Спецификация */
+
+body {
+    font-family: 'Myriad Pro', sans-serif;
+ overflow-x:hidden; 
+ margin-bottom: 0;
+
+
+}
+.header {
+    animation-delay: 3s;
+}
+
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2  {
+    font-family: 'Ravie';
+    font-weight: 700;
+    color: #fd464b
+
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h2 {
+    text-align: center;
+}
+
+.title {
+    padding-top: 100px;
+    padding-bottom:70px;
+    text-align: center;
+}
+
+.title__main {
+    font-size: 32px;
+    font-family: 'Comic Sans MS';
+}
+
+.title__text {
+    font-size: 20px;
+    width: 780px;
+    margin: 0 auto;
+}
+
+
+
+/* Первый экран */
+
+.header {
+
+    background: #81cebe; 
+    color: #010101;
+    padding-top:60px;
+    padding-bottom: 110px;
+
+
+}
+
+
+.menu {
+    margin-top:8px;
+}
+
+.menu__item {
+    margin: 0 57px;
+
+}
+
+.menu__item a {
+    font-size:22px;
+    font-weight:700;
+    color: #000;
+}
+
+.main {
+    margin-top:117px;
+}
+
+.main__title {
+    font-size:50px;
+    margin-bottom: 50px;
+}
+
+.main__intro {
+    font-size: 20px;
+    line-height: 1.3em;
+}
+
+.main__text {
+    font-size: 20px;
+    margin-top:15px;
+ 
+    width: 400px;
+}
+
+.icons__item {
+    margin-right:30px;
+}
+
+.icons__item a {
+    color: #000;
+    font-size: 42px;
+    transition: all 0.3s ease;
+}
+
+.icons__item a:hover {
+    text-decoration: none;
+    color: #fd464b;
+}
+.ipad{
+ display: block;
+    margin: 60px auto 0;
+    margin-top: 10px;
+
+}
+
+
+
+/* Второй экран */
+
+
+.sub {
+    margin-bottom: 65px;
+    margin-bottom: 0;
+}
+
+.sub__text {
+    color: #898989
+
+}
+.sub__title {
+font-family: 'Comic Sans MS';
+font-size: 25px;
+}
+.sub__text {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px 40px #8fd0cc inset, 0 0 0 0 #148470;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+  transition: .15s ease-in-out;
+}
+.sub__text:hover {
+  box-shadow: 0 0 10px 0 #8fd0cc inset, 0 0 10px 4px #148470;
+  color: #8fd0cc;
+}
+
+/* Третий экран */
+.footer {
+
+    background: url(../img/bg.jpg) no-repeat center top / cover;
+    padding:170px 0 94px;
+    margin-top: 50px;
+}
+.logo {
+     text-align: center;
+}
+.credits {
+    color: #fff;
+    font-size: 16px;
+    width: 184px;
+    margin: 0 auto;
+    text-align: center;
+}
+.BB {
+     text-align: center;
+}
+
+
+
+
+
+/* Медиа-запросы */
+@media screen and (max-width: 992px) {
+    .logo {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .offer {
+        text-align: center;
+    }
+    .offer__text {
+        margin: 20px auto;
+        width: auto;
+    }
+    .icons {
+        justify-content: center;
+    }
+    .icons__item:nth-child(3) {
+        margin-right: 0;
+    }
+    .form__input {
+        margin-right:0;
+        width: 100%;
+    }
+    .form__btn {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .title__text {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .ipad {
+        width: 100%;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu__item {
+        text-align: center;
+        margin-bottom:10px;
+    }
+}
+
+
+
+{
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+}
+ #pixie{position:fixed;}
+  
+
+/* скролл */
+
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#6dc0c8;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
+}
+
